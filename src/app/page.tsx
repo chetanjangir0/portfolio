@@ -93,12 +93,12 @@ export default function Portfolio() {
           <Code className="w-4 h-4" />
           ~/projects
         </Button>
-        <Link href="/blog">
+        {/*<Link href="/blog">
           <Button variant="ghost" className="gap-2">
             <BookOpen className="w-4 h-4" />
             ~/blog
           </Button>
-        </Link>
+        </Link>*/}
       </nav>
 
       {/* Content */}

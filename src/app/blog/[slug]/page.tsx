@@ -17,7 +17,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
   let title = "Not found";
   if (post) {
-    title = post.title;
+    title = post?.title;
   }
 
   return {
@@ -32,7 +32,7 @@ export async function generateStaticParams() {
   const posts = getAllPosts();
 
   return posts.map((post) => ({
-    slug: post.id,
+    slug: post?.id,
   }));
 }
 
@@ -53,7 +53,7 @@ export default async function Post(props: Params) {
       </div>
     )
   }
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post?.content || "");
   return (
     <div className="min-h-screen bg-background text-gray-white p-4 md:p-8 font-mono">
       <div className="max-w-4xl mx-auto">
@@ -63,10 +63,10 @@ export default async function Post(props: Params) {
         </Link>
         <Card className="p-8 bg-card border-card-border">
           <article className="prose prose-invert max-w-none">
-            <h1 className="text-3xl font-bold text-purple-blue mb-2">{post.title}</h1>
-            <time className="text-sm text-muted mb-6 block">{post.date}</time>
+            <h1 className="text-3xl font-bold text-purple-blue mb-2">{post?.title}</h1>
+            <time className="text-sm text-muted mb-6 block">{post?.date}</time>
             <div className="flex flex-wrap gap-2 mb-8">
-              {post.tags.map((tag) => (
+              {post?.tags.map((tag) => (
                 <span key={tag} className="px-2 py-1 text-xs rounded-md bg-card-border text-purple">
                   {tag}
                 </span>
