@@ -1,4 +1,4 @@
-import { Github, Linkedin, Braces, Twitter} from "lucide-react";
+import { Github, Linkedin, Braces, Twitter, FileText} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Projects from "@/components/sections/Projects";
@@ -30,6 +30,11 @@ export default function Home() {
       href: "https://x.com/chetanJgr/",
       icon: <Twitter className="w-4 h-4" />,
     },
+    {
+      title: "Resume",
+      href: "/chetan_jangir_resume.pdf",
+      icon: <FileText className="w-4 h-4" />,
+    },
   ];
 
   return (
@@ -43,7 +48,7 @@ export default function Home() {
       </p>
       <div className="flex gap-4 flex-wrap">
         {socials.map((social) => (
-          <Link href={social.href} key={social.title}>
+          <Link href={social.href} key={social.title} target="_blank">
             <Button
               variant="outline"
               className="gap-2 text-purple border-muted hover:border-gray-white"
