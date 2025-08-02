@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       title: "Resume",
-      href: "/chetan_jangir_resume.pdf",
+      href: "/chetan_jangir.pdf",
       icon: <FileText className="w-4 h-4" />,
     },
   ];
