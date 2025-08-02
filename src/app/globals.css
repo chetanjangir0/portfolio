@@ -21,6 +21,25 @@
 
 }
 
+/* :root { */
+/*   --background: #181825; */
+/**/
+/*   --card: #1e1e2e; */
+/*   --card-foreground: 169, 177, 214; */
+/*   --card-border: #292e42; */
+/*   --card-border-hover: #7dc4e4; */
+/**/
+/*   --green: #a6e3a1; */
+/*   --blue: #89b4fa; */
+/*   --purple: #cba6f7; */
+/*   --purple-blue: #b4befe; */
+/*   --gray-white: #f5e0dc; */
+/**/
+/*   --tag-background: #292e42; */
+/*   --muted: #565f89; */
+/**/
+/* } */
+
 html {
   @apply bg-background;
 }
