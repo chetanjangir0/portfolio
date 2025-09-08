@@ -59,7 +59,7 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      <Projects />
+      <Projects count={4}/>
     </div>
   );
 }

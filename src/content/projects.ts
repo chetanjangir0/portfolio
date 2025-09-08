@@ -8,6 +8,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "TCP to HTTP (from scratch in Go)",
+    description:
+      "An HTTP server package built on top of TCP layer without using Go’s net/http package.",
+    tags: ["Go", "TCP/IP", "HTTP/1.1"],
+    liveLink:
+      "",
+    devLink: "https://github.com/chetanjangir0/tcptohttp",
+  },
+  {
     title: "Ollama Hub: GUI for Local LLM Models",
     description:
       "A VS Code extension providing a graphical interface to interact with local AI models",
@@ -39,6 +48,24 @@ const projects: Project[] = [
     tags: ["TypeScript", "SvelteKit", "TailwindCSS"],
     liveLink: "https://my-bagpacks.pages.dev/",
     devLink: "https://github.com/chetanjangir0/my-bagpacks",
+  },
+  {
+    title: "QuakeVis: An earthquake visualizer application ",
+    description:
+      "A web application that visualizes recent earthquakes around the world on an interactive Google Map.",
+    tags: ["React.js", "Next.js", "Typescript"],
+    liveLink:
+      "https://quake-vis.vercel.app/",
+    devLink: "https://github.com/chetanjangir0/quakeVis",
+  },
+  {
+    title: "Grep Clone – Command-Line Text Search Tool",
+    description:
+      "A simplified reimplementation of the Unix grep command that searches for exact string matches in text files.",
+    tags: ["Rust"],
+    liveLink:
+      "",
+    devLink: "https://github.com/chetanjangir0/greprs",
   },
 ];
 
