@@ -33,8 +33,8 @@ export default function ProjectCard({
             ))}
           </div>
           <div className="flex flex-row-reverse gap-2">
-            { liveLink && <Link href={liveLink} onClick={(e) => e.stopPropagation()}><ExternalLink className="w-6 h-6"/></Link>}
-            { devLink && <Link href={devLink} onClick={(e) => e.stopPropagation()}><Github className="w-6 h-6"/></Link>}
+            { liveLink && <Link href={liveLink} onClick={(e) => e.stopPropagation()} target="_blank"><ExternalLink className="w-6 h-6"/></Link>}
+            { devLink && <Link href={devLink} onClick={(e) => e.stopPropagation()} target="_blank"><Github className="w-6 h-6"/></Link>}
           </div>
         </div>
       </div>
